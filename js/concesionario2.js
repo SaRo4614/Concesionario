@@ -5,7 +5,7 @@ class Vehículo {
         this.precio = precio;
     }
 
-    toString() {
+    mostrarInformacion() {
         return `El Vehículo: ${this.marca} // Modelo: ${this.modelo} // Tiene un precio de: $${this.precio}`;
     }
 }
@@ -16,8 +16,8 @@ class Auto extends Vehículo {
         this.puertas = puertas;
     }
 
-    toString() {
-        return `${super.toString() } // Números de puertas ${this.puertas}`;
+    mostrarInformacion() {
+        return `${super.mostrarInformacion() } // Números de puertas ${this.puertas}`;
     }
 }
 
@@ -27,8 +27,8 @@ class Moto extends Vehículo {
         this.cilindrada = cilindrada;
     }
 
-    toString() {
-        return `${super.toString() } // Cilindrada ${this.cilindrada}`;
+    mostrarInformacion() {
+        return `${super.mostrarInformacion() } // Cilindrada ${this.cilindrada}`;
     }
 }
 
